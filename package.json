@@ -1,0 +1,37 @@
+{
+  "name": "cylon-natural",
+  "description": "Add ability to understand natural human language and communicate with friends",
+  "version": "1.0.0",
+  "devDependencies": {
+    "chai": "3.0.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.0",
+    "jshint": "^2.8.0",
+    "mocha": "2.2.5",
+    "pre-git": "^0.6.2"
+  },
+  "dependencies": {
+    "cylon": "1.2.0",
+    "iot-native-lang": "^2.0.1",
+    "is-my-json-valid": "^2.12.2",
+    "lodash": "^3.10.1",
+    "mqtt": "^1.5.0",
+    "node-uuid": "^1.4.3"
+  },
+  "main": "index.js",
+  "scripts": {
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec test/helper.js test/*.spec.js && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "pretest": "jshint lib",
+    "test": "mocha test/helper.js test/*.spec.js",
+    "coverage": "istanbul cover _mocha -- test/helper.js test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkfont/cylon-natural.git"
+  },
+  "author": "Andrey 'vkfont' Afoninsky",
+  "license": "Apache-2.0",
+  "pre-push": [
+    "npm test"
+  ]
+}
