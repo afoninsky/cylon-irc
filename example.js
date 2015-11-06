@@ -11,12 +11,17 @@ var syntaxTree = {
 };
 
 Cylon.robot({
-  name: 'Vasya',
+  name: 'Василий',
   connections: {
-    lang: { adaptor: 'natural', lang: 'ru', tree: syntaxTree }
+    natural: { adaptor: 'natural', lang: 'ru', tree: syntaxTree },
+    mqtt: { adaptor: 'mqtt', host: 'mqtt://localhost' }
+  },
+  devices: {
+    test: { driver: 'natural', language: 'natural', connection: 'mqtt', listen: ['test'], treeListenDepth: 3 }
   },
   work: function (my) {
-    // console.log(my.connections.lang.test);
+    // 2do: export methods from driver
+    // and test send-receive
   }
 });
 
