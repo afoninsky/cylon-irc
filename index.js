@@ -3,7 +3,7 @@
 var Driver = require('./lib/driver');
 
 module.exports = {
-  drivers: ['natural'],
+  drivers: ['irc'],
   driver: function(opts) {
     return new Driver(opts);
   }
