@@ -1,7 +1,7 @@
 {
   "name": "cylon-irc",
   "description": "Same as human irc, only for robots",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "devDependencies": {
     "jshint": "^2.8.0"
   },
