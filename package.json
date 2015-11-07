@@ -1,6 +1,6 @@
 {
-  "name": "cylon-natural",
-  "description": "Add ability to understand natural human language and communicate with friends",
+  "name": "cylon-irc",
+  "description": "Same as human irc, only for robots",
   "version": "1.0.0",
   "devDependencies": {
     "chai": "3.0.0",
@@ -15,7 +15,6 @@
     "iot-native-lang": "^2.0.1",
     "is-my-json-valid": "^2.12.2",
     "lodash": "^3.10.1",
-    "mqtt": "^1.5.0",
     "node-uuid": "^1.4.3",
     "string-hash": "^1.1.0"
   },
@@ -28,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vkfont/cylon-natural.git"
+    "url": "git+https://github.com/vkfont/cylon-irc.git"
   },
   "author": "Andrey 'vkfont' Afoninsky",
   "license": "Apache-2.0",
